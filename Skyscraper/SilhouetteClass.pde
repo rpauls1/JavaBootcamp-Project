@@ -1,7 +1,6 @@
 class Silhouette { //<>//
   //initiating variables
   int ssX, ssY;
-  int offsetX;
   int ssWidth, ssHeight;
   int noCol, noRow;
   int wdwSpace;
