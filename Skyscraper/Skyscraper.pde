@@ -36,7 +36,7 @@ void draw() {
 
 
 
-  //generating skyscrapers ina rray
+  //generating skyscrapers in array
   for (int s=0; s<skyscrapers.length; s++) {
     skyscrapers[s].ssX=220*s;
     skyscrapers[s].draw();
