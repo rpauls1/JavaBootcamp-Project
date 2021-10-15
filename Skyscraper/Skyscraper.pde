@@ -1,7 +1,11 @@
-Silhouette[] skyscrapers;
+Silhouette[] skyscrapers; //declaring array to generate skyscrapers
+import processing.video.*;
+Movie rain; //initating rain using Movie module
 
 void setup() {
   size(650, 700);
+  rain=new Movie(this, "rain.mp4");
+  rain.loop();
   skyscrapers=new Silhouette[3];
   for (int s=0; s<skyscrapers.length; s++) {
     skyscrapers[s]=new Silhouette();
@@ -9,9 +13,14 @@ void setup() {
 
   //x,y,w,h
 }
+//
+void movieEvent(Movie rain){
+  rain.read();
+}
 
 void draw() {
   background(#000000);
+  image(rain,0,0);
 
   noStroke();
   fill(#000000);
@@ -27,13 +36,13 @@ void draw() {
 
 
 
-  //creating skyscrapers
+  //generating skyscrapers ina rray
   for (int s=0; s<skyscrapers.length; s++) {
     skyscrapers[s].ssX=220*s;
     skyscrapers[s].draw();
   }
 }
-
+//using keyPressed method to alter hue based on key input
 void keyPressed() {
   if (key=='L') {
     for (int s=0; s<skyscrapers.length; s++) {
