@@ -1,6 +1,7 @@
 class Silhouette { //<>//
   //initiating variables
   int ssX, ssY;
+  int offsetX;
   int ssWidth, ssHeight;
   int noCol, noRow;
   int wdwSpace;
@@ -35,7 +36,7 @@ class Silhouette { //<>//
         //fill implemented using alpha parameter, taking lightHue to alter RGB value for hue
         fill(234,214,26,lightHue);
         //windows generated using formula below, taking variables declared in constructor and using i/j to point to next location
-        rect(ssX+40+i*wdwSpace, ssY+40+j*wdwSpace, wdwSpace/2, wdwSpace/2);
+        rect(ssX+40+i*wdwSpace, ssY+40+j*wdwSpace, wdwSpace/2, wdwSpace/2); 
       }
     }
   }
