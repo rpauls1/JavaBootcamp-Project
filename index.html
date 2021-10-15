@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+ <style type="text/css">
+   body{
+      background-color:rgb(50,50,50);
+      color:white
+   }
+   a{
+      color:rgb(210,210,255)
+   }
+   img{
+      margin: 15px 15px 15px 15px
+   }
+   hr{
+      border-top: 1px solid gray;
+   }
+   .infotd{
+     vertical-align:top
+   }
+ </style>
+</head>
+
+<body style="background-color:rgb(50,50,50); color:white">
+<table width= 1000px>
+  <tr>
+    <td class="infotd">
+      <h3>Robert Pauls</h3>
+      <p> Prior to Undergraduate, I'd studied Computer Science at both GCSE and A Level having programmed using Python and SQL(mostly at A Level)which I am . While learning Java has been a short-packed, process, I've thoroughly enjoyed being able to learn its abilities through Processing.
+
+      <p>Throughout the GCSE and A Level courses, I've used Python to learn a lot of programming concepts including OOP, Loops, Arrays and a lot of what we've been learning throughout the bootcamp. I've also been able to create my own projects towards the end, both on a large and small scale. The previous knowledge has given me a good understanding of the use for certain concepts however the difference in syntax has been a short struggle for me. As well as creating my own program in both courses, I've also attempted my own small programs either using predefined Git Repo's such as red discord bot or by attempting to code my own programs using YouTube tutorials. </p>
+
+      <p>Being </p>
+    </td>
+    <td>
+	<img src="imageofyou.png" width=300px></img>
+    </td>
+  </tr>
+  <tr>
+    <td colspan=2>
+	<hr>
+    </td>
+  </tr>
+
+ <tr>
+  <td class="infotd">
+    <h3>Java Bootcamp Project: Interactive Skyscrapers </h3>
+
+    <p>The video on the right helps demonstrate the function of the program visually</p>
+
+    <p>Using the previous 2 weeks of Java taught to us, I've been able to develop a program that is able to generate skyscrapers with windows that allows the user to change the hue of light on windows' of the skyscraper based on the keyPressed() method.</p>
+
+    <p>Originally, I had intended to develop each skyscraper and its windows separately in the main draw() method however using a class would be much more efficient, that combines the program's methods and it's attributes into one class to be called under the main program's draw() method with the .draw() function. As well as being able to combine methods and attributes in one, I am able to alter the behaviour of the class using it's objects (variables initiated and declared in the class) instead of the need to create each part of the draw() method separately in the main program. Within the class, I have created a 2D array which will help to generate the windows of each skyscraper</p> 
+
+    <p>After creating the skyscrapers and their windows in the class draw() method, I used the keyPressed() method to be able to alter the hue of the windows. By setting the lightHue variable previously in the class, I can access it in the fill() function as the alpha parameter to be used with the allocated keys as a hue controller, altering the value of the hue until it reaches a black background or the max value of lightHue. To prevent the hue from going over the max RGB values, I used the constrain() function to prevent the value of lightHue from exceeding either the lowest or highest RGB value when adjusting.</p>
+
+    <p>
+    <p>
+      Check out the code on Github: <a href="https://github.com/rpauls1/JavaBootcamp-Project">Bootcamp Project Repo</a>
+    </p>
+  <td>
+	<a href="https://web.microsoftstream.com/video/76fad322-4d10-4c3c-a6e5-58ff073302ee"> A video describing the program's functionality and the final result</a>
+  </td>
+<tr>
+ <td colspan = 2 align=center>
+	<img src="pic1.png" width="285px">
+	<img src="pic2.png" width="265px">
+	<img src="pic3.png" width="255px">
+ </td>
+</tr>
+ </tr>
+ </td/table>
+</table>
+</body>
+</html>
